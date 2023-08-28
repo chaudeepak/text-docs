@@ -1,0 +1,46 @@
+form handeling plugin
+    -formik
+    -react hook form 
+
+form handeling concept (third party are also based on this concept)
+    -form data store
+    -error state handel 
+    -change event handle with validation 
+    -form submission
+    -form control
+
+controlled and uncontrolled
+
+package install
+    yarn add react-hook-form
+
+
+yarn add @hookform/resolvers
+yarn add yup
+
+-<Form> component props: action method encType (use this when you dont need async submission) (not using now)
+-in react we work with async submission 
+    -form ko data linxau 
+    -clint side ko sabai kaam sakauxau (ie: mapping, validation)
+        -then we submit through some async methods : list to onSubmit method 
+
+
+yarn add axios
+
+all functions in axios are asynchronous 
+
+npn i CORS (in servers side only)
+
+
+Interceptors:
+    -axiosInstance.intetceptors.response.use(
+        (success) => {
+            return success;
+        }
+        (reject) => {
+            //handler error
+        }
+    )
+
+hook function is not async function
+

@@ -1,0 +1,6 @@
+container -->centers the content(gutter/space at left and right)
+container-fluid --> full width container
+
+
+
+wrapper conntainer> row> grid

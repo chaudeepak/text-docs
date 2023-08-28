@@ -1,0 +1,45 @@
+state are dynamic
+props are static
+
+
+web hook
+	special fumctions given by react for the feature achievement
+
+
+(effect and state hook --> see at home) 
+
+Hard reload(url load) : all states are reset
+Soft reload(page reload-> ctrl+R): states are not reset
+
+iport LandingPage from "./pages/LandingPage.jsx" -->default import
+iport LandingPage from "./pages/LandingPage.jsx" -->named import
+
+loading props
+->for main.jsx
+	<LandingPage name="Deepak" address="Bardiya"></LandingPage>
+
+->For component (eg: LandingPae)
+const LandingPage = (props) =>{
+    let name = props.name;
+    let address = props.address;
+	or
+    let {name, address} = props;
+    return(
+        <div>
+            <div>Your name is :{name}</div>
+            <div>Your address is: {address}</div>
+        </div>
+    )
+}
+Or 
+const LandingPage = ({name, address}) =>{
+return(
+)
+
+
+Lifecycle of react component
+1) Mounting
+	Loading Phase
+	constructor()
+	props initialize
+	state initialize

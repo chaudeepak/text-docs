@@ -1,0 +1,15 @@
+install styled-components
+    -yarn add styled-components
+
+
+
+if you want to import both styled and react component at the same time
+    -either change the name
+        or
+    -use aliasing 
+        import {Button as CustomButton}
+
+
+export const Button = styled.button
+    .button is used to define tag
+        eg: .h1, .section, .div

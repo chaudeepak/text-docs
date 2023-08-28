@@ -1,0 +1,7 @@
+button bata click event Falne 
+click event component ma define garne
+ componrnt bhitra
+    document.boby.classlist 
+        toggle ma tyo thauma tyo line copy paste garne
+
+sb admin bootstrap

@@ -1,0 +1,56 @@
+web hook 
+    special functions given by react for the feature achievement
+    -rule
+        -name always start with "use..."
+        -hook functions are always used at top level
+    -Types:
+        state hook
+
+
+
+CSS
+- inline css style = {{backgroundColor: "#cccccc", padding: "10px"}} =>takes as a object
+    or
+    const bgColor ={
+        backgroundColor: "cccccc",
+        padding: 10px
+    }
+
+    <Home style = {bgColor}></Home>
+
+-Global css and component based css
+    -global css are written in "src/assets/<folder/file> and inported in main.jsx
+    -component css are written in current working directory and imported in component JSX file
+
+
+React Fragment
+    <>
+        <div>           ->key is not allowed
+        <div>
+    </>
+
+    OR
+    <React.Fragment>
+        <div>           ->writting key is allowed
+        <div>
+    </React.Fragment>
+
+vanilla bootstrap: <div class="container"></div> (best using with tailwind)
+
+react bootstrap: <Container></Container>
+
+
+using bootstrap:
+    -Go through command prompt:
+        yarn add bootstrap (if using vanilla)
+        yarn add bootstrap react-bootstrap (if using through react app)
+    -then import in main.jsx
+        import "bootstrap/dist/css/bootstrap.min.css" -->(for css)
+        import "bootstrap" -->(for js)
+
+
+fontawesone package add:
+    - yarn add @fortawesome/fontawesone-free (vanilla script)
+    -yarn add react-icon
+
+<FaPaperPlane/> and import import {FaPaperPlane} from "react-icons/fa"

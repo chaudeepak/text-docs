@@ -1,0 +1,12 @@
+
+importing static images:
+    - import Image-1 from "< define path>"
+        -<Img src={Image-1} />
+
+<col sm={{offset:3, span:9}} />
+
+import {FaPaperPlane} from "react-icon/fa";
+
+
+<FaPaperPlane />
+

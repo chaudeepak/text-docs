@@ -1,0 +1,16 @@
+Documentation
+Before starting project set some rules
+    -convention for 
+        class name
+        variable name
+        file 
+        functions
+        constant 
+        folder
+    -indentation
+
+flex single row defination
+grid multiple row defination
+
+inside grid we can use flex but not vice versa
+inside flex columns comes

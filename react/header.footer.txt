@@ -1,0 +1,93 @@
+<Navbar expand="lg" className="bg-body-tertiary" sticky="top">
+<Container fluid>
+  <Navbar.Brand href="#">
+    <Image src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png" />
+  </Navbar.Brand>
+  <Navbar.Toggle aria-controls="navbarScroll" />
+  <Navbar.Collapse id="navbarScroll">
+    <Nav
+      className="me-auto my-2 my-lg-0"
+      style={{ maxHeight: "100px" }}
+      navbarScroll
+    >
+      <Nav.Link href="/">Home</Nav.Link>
+      <NavDropdown title="Category" id="navbarScrollingDropdown">
+        <NavDropdown.Item href="#action3">Fashion</NavDropdown.Item>
+        <NavDropdown.Item href="#action4">Grocery</NavDropdown.Item>
+        <NavDropdown.Item href="#action5">
+          Electronics
+        </NavDropdown.Item>
+      </NavDropdown>
+      <Nav.Link href="#">About</Nav.Link>
+    </Nav>
+    <Form className="d-flex">
+      <Form.Control
+        type="search"
+        placeholder="Search"
+        className="me-2"
+        aria-label="Search"
+      />
+      <Button variant="outline-success">Search</Button>
+    </Form>
+  </Navbar.Collapse>
+</Container>
+<Nav.Item>
+  <Nav.Link href="#" className="me-2 p-2">
+      {/* Cart0<FontAwesomeIcon icon="fa-solid fa-cart-shopping" /> */}0
+  </Nav.Link>
+</Nav.Item>
+<Nav.Item>
+  <Nav.Link href="/login" className="me-2">
+    Login
+  </Nav.Link>
+  <NavLink className={"nav-link"} to="/login"></NavLink>
+</Nav.Item>
+<Nav.Item>
+  <Nav.Link href="/register" className="me-2">
+    Register
+  </Nav.Link>
+</Nav.Item>
+</Navbar>
+
+
+<Container fluid bg="light">
+<Row>
+  <Col sm={12} md={4}>
+    <Image src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png" />
+    <Card.Text>
+      E-commerce has evolved over the past few years and since it’s
+      easier and more convenient, it is evident that customers are
+      actually switching to the trend of online shopping. Daraz, the
+      Nepali shopping store, brings a whole new concept by showcasing
+      a number of famous brands under one roof. Not only does it
+      fulfill clothing necessities of both men and women but you can
+      also shop for all kinds of appliances like air conditioners,
+      heaters, refrigerators, LED TVs and a lot more. Simply select
+      your favorite brand like Samsung, Apple, HP, Huawei, Dell,
+      Canon, Nikon, etc and get yourself the best electronic items.
+    </Card.Text>
+  </Col>
+  <Col sm={12} md={4}>
+    {/* <h4>Quick Link</h4> */}
+    <Card.Text>Quick Link</Card.Text>
+    <hr />
+    <Card style={{ width: "18rem" }}>
+      <ListGroup variant="flush">
+        <ListGroup.Item>About Us</ListGroup.Item>
+        <ListGroup.Item>Terms and Conditions</ListGroup.Item>
+        <ListGroup.Item>Privecy Policy</ListGroup.Item>
+        <ListGroup.Item>Contact Us</ListGroup.Item>
+      </ListGroup>
+    </Card>
+  </Col>
+  <Col sm={12} md={4}>
+    {/* <h4>Connect With Us</h4> */}
+    <Card.Text>Contact With Us</Card.Text>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.926724080617!2d85.31128292461317!3d27.719548624954722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18e2bcf06be5%3A0xb3febee08a175fb7!2sAmrit%20Science%20Campus!5e0!3m2!1sen!2snp!4v1692519902891!5m2!1sen!2snp"
+      width="400"
+      height="250"
+    />
+  </Col>
+</Row>
+</Container>

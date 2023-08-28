@@ -1,0 +1,20 @@
+render and execute?
+
+
+
+tag start with small letter
+component start with capital letter
+
+
+
+grid table and form
+
+
+wesite 
+<body>
+	header
+	hero section
+		(banner   menu/category listing/none)
+	content
+	footer
+</body>

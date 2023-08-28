@@ -1,0 +1,53 @@
+import/install router 
+    -yarn add react-router-dom 
+
+<BrowserRouter>
+    <Routes>
+        //all route should be here
+        <Route path ="/" element = {<HomePage/>} />
+
+        //make new page for not found for non-esisting url and redirect for all
+        <Route path ="*" element = {<NotFound/>} />
+    </Routes>
+</BrowserRouter>
+
+
+<Nav.Link> is React Bootstrap component (. refers to Link is under Nav Component)       //using <NavLink> doesnt
+<NavLink> is React router-dom component                                                 //reload page
+
+Implementation
+    <NavLink className={"nav-link} to="/"></NavLink>
+    <Nav.Link className="active" href="/"><Nav.Link>
+
+we can use <NavLink> or <Link>  =>NavLink uses active class(user dont have to define)
+
+<BrowserRouter>
+    <Routes>
+        <Route path="/" element={<HomePageLayout/>}
+          <Route index element={<Index />} />
+          <Route path="login" element={<LoginPage />                //Dont use absolute url slash (/) in child
+          <Route path="register" element={<RegisterPage />} />      //best for working in different-different layout
+
+          <Route path="*" element={<NotFound />} /> */}
+        </Route>
+    </Routes>
+</BrowserRouter>
+
+<Outlet/> => Loades the child route
+place outlet in HomePageLayout in between header and foote where content is needed
+
+
+react toastify package
+    -yarn add react-toastify
+import {toast} rom "react-toast";
+
+awesome react component
+
+for /category/category-list (url)
+    -use params hook from react router dom
+        params provides objecct data
+
+/category/params (after/ are params)
+/category?query (after? is query)
+
+role based access control

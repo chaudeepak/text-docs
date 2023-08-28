@@ -1,0 +1,4 @@
+composition vs inheritance
+
+programming paradigms
+microservice and monolithic

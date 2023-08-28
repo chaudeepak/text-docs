@@ -1,0 +1,27 @@
+-react is node based script. its js code. it is library
+-to reoresent UI/UX
+-not suitable for SEO (SEO requires SSR(server side rendering))
+- if SEO is needed for application built on react use react based framework(eg: next.js)
+
+to run react we need
+    -node.js
+    -JSX (script provided by library)
+        -compile==>js (browser doesnot understand JSX so compile to js)
+        -task manager, compiler (to compile)
+            -babel 
+    -npm, yarn, pnpm (package manager)
+
+npm ==>cra template
+vite
+
+
+--using npm create react app--
+npx create-react-app <non existing folder name>
+
+vite is technology to compile frontend
+-installing yarn
+    npm i yarn --global
+-creating vite project using yarn
+    yarn create vite <directory name> --template react
+-to run
+    yarn dev
