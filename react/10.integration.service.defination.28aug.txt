@@ -1,0 +1,22 @@
+
+                                                    response
+component ==> axiosInstance.method() ==> API server =========> axiosInstance.interceptors.response ==> component
+
+program flow change to 
+-jastai auth bhanne component ma xa bhane (login/register) 
+-auth sanga related login, register, forgetpassword, reset password, activation password yo 
+ sabailai handle garna euta service file banaune that is "auth service"
+
+component
+        ==>service
+
+
+
+
+
+
+
+post request format 
+-first parameter: url
+-second parameter: data
+-third parameter: configuration

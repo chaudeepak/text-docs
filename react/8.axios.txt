@@ -1,0 +1,45 @@
+const axiosInstance = axios.create({
+    //instead of calling in every page where required,
+    //we create axiosInstance at one file
+    baseURL: "https://localhost:3005/api",
+    //response time in milliseconds
+    timeout: 30000,
+    timeoutErrorMessage: "Server time out ....",
+    //this is default header
+    header: {
+        "Accept": "application/json",               //serrver bata clint ma content kasto paune
+        "Content-Type": "application/json",         //pathauda kasto header pathaune (default)
+        
+    }
+})
+
+
+axiosInstance use garnu ko faida k ta?
+we can interctpt request and response
+    Component ====> axiosInstance ====> Intercept ====> Axios Call ====> Server
+    Server ====> axiosInstance ====> Intercept ====> Component
+        we use Intercept generally in response
+
+Axios instance for response takes two callback functions success and failure 
+
+
+-If we need to put login screen at multiple place (ie: in some case if we go on usnig service we get logged out and 
+ we see login popup box only)
+-in such case we make axios call as service // loginpage and login popup use same API
+
+// Component ====> Axios call =====> Server 
+
+// Component ====> AxiosInstance ===> Intercept =====> Axios Call ====> Server 
+// Server ======> AxiosInstance =====> Intercept =====> Component
+// {data, conifg,,,}
+// {... response: {data, conifg, ....}, }
+// {data, config, ...}
+// Success, ===> 2X
+// Reject   ===> 4X 5X
+    // 422, 400, 401, 403, 404
+
+    // /admin/banner/create
+        // api ===> 403 => 
+
+        // /admin/banner/edit/id
+            // api ===> 403

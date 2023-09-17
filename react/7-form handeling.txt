@@ -44,3 +44,8 @@ Interceptors:
 
 hook function is not async function
 
+real time validation ==> handleChange 
+before submission validation ==> hadleSubmit
+
+// yarn add @hookform/resolvers  or npm i @hookform/resolvers
+// yarn add yup or npm i yup

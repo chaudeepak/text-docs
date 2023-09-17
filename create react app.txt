@@ -12,7 +12,7 @@ Hard reload(url load) : all states are reset
 Soft reload(page reload-> ctrl+R): states are not reset
 
 iport LandingPage from "./pages/LandingPage.jsx" -->default import
-iport LandingPage from "./pages/LandingPage.jsx" -->named import
+iport {LandingPage} from "./pages/LandingPage.jsx" -->named import
 
 loading props
 ->for main.jsx
