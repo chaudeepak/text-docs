@@ -1,0 +1,8 @@
+import useNavigate from react router dom
+    const navigate = useNavigate();
+    navigate("/login")
+    for react component
+
+
+if not react component
+    window.location.href = "/login";

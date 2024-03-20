@@ -1,0 +1,61 @@
+-After login response object >data >access token and refresh token (there exists)
+    Access token:
+        Active state ma jati pani access garnu parne kura hunxa tesko lagi use hunxa
+
+    Refresh token:
+        inactive state--> access token has short lifetime after that it expires at backend
+            after that either re-login is required or
+            token(actie token) is has to be refreshed
+        to refresh the active token there is refresh token. and that refresh token is used as next active token.
+
+-After login communication with server, we need tokens (two tokens)
+    these tokens are received as login response
+
+-these tokens needs to be accessed in all pages(screens) after login
+    this tokens need to be stored somewhere ie: web storage because if we do hard reload they disappear
+
+
+-Webstorage
+    cookie
+    localstorage
+    sessionStorage
+
+    //hami le use gardainau
+    cloudStorage(hamile data store na garera third party lai provide garxau)
+
+
+                Cookie                      localstorage                        SessionStorage
+size            per domain                  per domain                          per domain
+                max: 50 cookies             -                                   -
+                per cookie: 4096 chars      5Mb(can be changed by user by browser settings)
+
+datatype        -----------string--------------------------------------------------------
+
+Maturity        time dependent              ---unless we clear or client itself removes the webserver--
+
+security        ----------unsecure(redes on the client so can be seen by user or even change)--
+
+Dependencies    -------------------server/domain dependent----------------------------------
+                path dependent             domain dependent                     tab dependent
+                abc.com/abc ma             abc.com/ ma store                    euta tab ma open gareko
+                store gareko cookie        gareko local storage                 arko tab ma access hudaina
+                abc.com/xyz ma             abc.com/* ma                         same domain huda pani
+                access hudaina             access hunxa                         (auto destroyed after closing tab)
+
+Usage:
+-Cookie: document.cookie = "name= value; expiry=date; value=value; path=value"
+
+-localstorage: localstorage global Object
+                localstorage.setItem(name, value)
+                localstorage.getItem(name)
+                localstorage.removeItem(name)
+                localstorage.clear()
+
+-SessionStorage: sessionStorage global Object
+                    sessionStorage.setItem(name, vlaue)
+                    sessionStorage.getItem(name)
+                    sessionStorage.removeItem(name)
+                    sessionStorage.clear()
+
+-There is Error class in javaScript
+

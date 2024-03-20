@@ -1,0 +1,6 @@
+for multiple selection 
+-install package
+    yarn add react-select
+
+
+    

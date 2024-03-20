@@ -1,0 +1,6 @@
+For search api two approaches
+    - useSearchParams --> this hook is used to set url, provided by react router-dom
+    - custom form submission, using custom handeling
+
+
+class video : Integration on home page contine 20230919

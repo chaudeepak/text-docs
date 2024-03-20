@@ -1,0 +1,9 @@
+you can use useCallback tinyfor API call provided by react
+-for state memorize 
+-performance hook
+
+useMemo()
+- used for maintaining variable state
+- data
+
+useCallback () is for function

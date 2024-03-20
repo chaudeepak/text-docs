@@ -1,0 +1,14 @@
+in react component we use map
+
+-map function:
+    first parameter: callback
+
+-(singleBanner: edchoti ma 1 ota banner, index: array of objects ho ani index hunxa)
+
+-yedi return lekhna chha bhane {} nai bhane (): callback function ko lagi
+
+-react component ma loop lagauna lai first ko tag ma key define garnai parxa
+
+{
+    bannerList && bannerList.map((singleBanner, index) )
+}

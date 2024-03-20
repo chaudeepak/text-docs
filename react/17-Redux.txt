@@ -1,0 +1,18 @@
+components ===> Event ===> Reducers ===> Store Mnipulate ===> Watchers / listners
+(redux bhitra event trigger garne paryo bhane , event ko collection)
+api call / state management ===> reducer call garxau
+
+-redux
+-middleware (thunk, saga)
+-react components
+-Reducers
+
+-redux-toolkit
+        (redux, reducers, middleware)
+React Application <== react-redux ==> Redux app
+
+install package
+    - yarn add @reduxjs/toolkit react-redux
+
+
+reducer can't be empty

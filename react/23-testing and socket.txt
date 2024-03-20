@@ -1,0 +1,21 @@
+- test is done on development environment / not in production environment
+- jest is used to test node based application
+- install package yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer
+- For testing add a scripts in package.json as
+        "test": "jest"
+
+- yarn add -D jest-environment-jsdom    //-D is development environment
+- yarn add -D identity-obj-proxy
+- yarn add -D @testing-library/jest-dom
+
+
+
+BUILD --> yarn run build
+TEST ---> yarn run test
+
+
+
+-----------------SOCKET----------------------
+
+- socket is used to communicate between client and server whithout called
+- generally used in real time application

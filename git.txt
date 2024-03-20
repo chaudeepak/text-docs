@@ -1,9 +1,11 @@
 git init
 git add <file name> Or git add .  (for all file)
 git commit -m "initial commit"    (initial commit --->commit information)
+git branch -m main
 git remote add origin <url>
 git push -u origin main
 
 
 git status
 git remote remove origin
+git show-ref ===> to see reference branch

@@ -49,3 +49,17 @@ before submission validation ==> hadleSubmit
 
 // yarn add @hookform/resolvers  or npm i @hookform/resolvers
 // yarn add yup or npm i yup
+
+
+
+sometimes we need set custom values during working in reacct hookform
+    aile registration hookform itself bata register gardai xau eg: {...register, ("name", {required: true})}
+    jaha nira change event auxa, change event ayeko bela directly registet method le bind gardinxa change event lai
+
+
+    custom value ko lagi:
+    setValue lai import garne useForm bata also watch to watch chnge in field
+    eg: const {register, handleSubmit, formState: {errors}, setValue, watch } = useForm()
+
+
+image ko validation yup le didaina ...........banner create ma xa example

@@ -1,0 +1,5 @@
+persisting cart and non persisting cart
+
+cart exists in two places
+    - local storage - normally we use local storage data to update the cart
+    - redux -persists until we do hard reload (hard reload paxi harauxa)

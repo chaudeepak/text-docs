@@ -21,6 +21,7 @@ npx create-react-app <non existing folder name>
 vite is technology to compile frontend
 -installing yarn
     npm i yarn --global
+    npm install --global yarn
 -creating vite project using yarn
     yarn create vite <directory name> --template react
 -to run

@@ -1,0 +1,11 @@
+useCallback () --> hook in react
+    - first parameter : callback function
+    - second parameter: as a dependency parameter
+
+change ma matrai api trigger garna paryo bhane matrai useCallback lekhne
+
+useSearchParams --> react router dom le dinxa
+    - url set gerne kaam garxa
+
+
+useSearchParams

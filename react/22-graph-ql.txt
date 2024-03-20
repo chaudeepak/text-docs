@@ -1,0 +1,26 @@
+install in command
+    -npm init -y
+
+    -npm i express cors graphql express-graphql mongodb
+
+    -npm i or npm install --force(if necessary)
+
+add start in scripts
+    - "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+install nodemon in terminal
+    - npm install -g nodemon
+
+start application
+    - npm start
+
+
+to access the graphql server we do not use get(), post(), put() etc 
+we work on query and mutation
+
+-data fetch operation is called query in graphql
+-data send operation is called mutation
